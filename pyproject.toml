@@ -1,0 +1,23 @@
+[project]
+name = "aero-rag"
+version = "0.1.0"
+description = "RAG over public aviation maintenance documents (FAA, EASA, NASA) with source citations and abstention"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "httpx",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
