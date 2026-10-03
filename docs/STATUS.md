@@ -2,7 +2,7 @@
 
 Source de vérité sur l'avancement. À lire au début de chaque session, à mettre à jour à la fin.
 
-Dernière mise à jour : 3 octobre 2026.
+Dernière mise à jour : 3 octobre 2026 (fin de la session 1).
 
 ## Étape en cours
 
@@ -11,14 +11,13 @@ Dernière mise à jour : 3 octobre 2026.
 ## Fait
 
 - [x] Repo cloné, `.gitignore` OK (`.env`, `.venv`)
-- [x] Docs : cahier des charges, `AGENTS.md`, `CLAUDE.md` (branche `docs/setup`, PR à merger)
+- [x] Docs : cahier des charges, `AGENTS.md`, `CLAUDE.md`, `STATUS.md` (PR #1 mergée)
 - [x] Venv `uv`, Python 3.12
 - [x] `pyproject.toml` (fastapi, httpx ; dev : pytest, ruff) + `uv.lock`
-- [x] Premier test `tests/test_health.py` vu échouer, puis `GET /health` dans `src/api/main.py` (branche `feat/health`, poussée, PR à ouvrir/merger)
+- [x] Premier test `tests/test_health.py` vu échouer, puis `GET /health` dans `src/api/main.py` (PR #2 mergée)
 
 ## À faire ensuite
 
-- [ ] Merger les PR `docs/setup` et `feat/health`
 - [ ] Dockerfile (session à part)
 - [ ] CI GitHub Actions : écrite par Matisse, relue par l'agent (session à part)
 
