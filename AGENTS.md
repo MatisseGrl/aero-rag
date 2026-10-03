@@ -49,6 +49,15 @@ uv run pytest                # tests
 uv run ruff check .          # lint
 ```
 
+## Niveau d'accompagnement : vite sur le boilerplate, à fond sur le cœur
+
+Matisse a peu de temps (~8 h/semaine). Il veut aller vite sur les petits trucs et comprendre en profondeur ce qui compte pour expliquer le RAG.
+
+- **Boilerplate** (routes triviales comme `/health`, config, `pyproject.toml`, structure de dossiers, correction de fautes de syntaxe) : l'agent écrit directement, avec 2-3 lignes d'explication. Pas d'indices en cascade, pas de quiz. Le test est toujours écrit avant le code et vu échouer.
+- **Cœur du RAG** (découpage et valeur de k, embeddings, retrieval, seuil d'abstention, prompt, évaluation, bugs d'un test métier) : règles 3 et 4 en plein. Indice d'abord, Matisse explique avant de passer au bloc suivant.
+- **CI/CD** : règle 2 inchangée. Matisse écrit, l'agent relit.
+- Si Matisse dit qu'il n'a pas le temps ou qu'il est bloqué sur un détail trivial, ne pas insister : débloquer et avancer.
+
 ## Règles de travail (non négociables)
 
 1. **Tests d'abord.** Le test s'écrit avant le code et Matisse doit le voir échouer. Premier test : `GET /health`.
