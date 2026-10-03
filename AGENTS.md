@@ -4,6 +4,11 @@ RAG sur la maintenance aéronautique (docs publics FAA, EASA, NASA NTRS). Il cit
 
 L'objectif n'est pas d'aller vite : Matisse (ING4 Data & IA) doit pouvoir tout expliquer en entretien et à un lab du MIT. Quand il y a un conflit entre aller vite et comprendre, on comprend.
 
+## Début et fin de session
+
+- Début : lire `docs/STATUS.md` pour savoir où on en est.
+- Fin : mettre à jour `docs/STATUS.md` (fait, à faire, décisions, questions ouvertes).
+
 ## Langue et ton
 
 - Matisse parle français, familier. Réponds en français, même registre, sans formalisme.
