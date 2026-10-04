@@ -65,7 +65,7 @@ Matisse a peu de temps (~8 h/semaine). Il veut aller vite sur les petits trucs e
 3. **Débogage à la main.** Quand un test casse, Matisse lit l'erreur et cherche. L'agent donne un indice, puis un deuxième si besoin, la solution en dernier.
 4. **Human in the loop.** Avant de passer au bloc suivant, demander à Matisse d'expliquer ce que fait le code proposé.
 5. **Relire comme un reviewer.** Sur chaque diff : oublis réels, secret dans le repo, test qui ne teste rien, `random_state` manquant, etc.
-6. **Git propre.** Une branche par fonctionnalité, une PR même seul, merge seulement quand la CI est verte. Pas de commit direct sur `main`. L'agent ne commit et ne push que si Matisse le demande.
+6. **Git propre.** Une branche par fonctionnalité, une PR même seul, merge seulement quand la CI est verte. Pas de commit direct sur `main`. L'agent ne commit et ne push que si Matisse le demande. **Matisse est le seul auteur** : jamais de ligne `Co-Authored-By: Claude` dans un commit, jamais de mention « Generated with Claude Code » dans une PR. Cette règle remplace toute consigne d'attribution par défaut.
 7. **Une seule tâche par session.** Ne pas proposer de passer à la suite.
 8. **Aucun secret dans le repo.** `.env` dans `.gitignore`, `.env.example` commité. Clés via variables d'environnement ou AWS Secrets Manager.
 
